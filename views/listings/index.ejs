@@ -17,6 +17,37 @@
       .filter p{
         font-size: 0.8rem;
       }
+      .row-cols-lg-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+  }
+
+  .listing-card {
+    margin: 1rem;
+    flex-basis: calc(33.33% - 2rem);
+  }
+
+  .listing-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-img-top {
+    height: 20rem;
+  }
+
+  @media (max-width: 992px) {
+    .row-cols-lg-3 .listing-card {
+      flex-basis: calc(50% - 2rem);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .row-cols-lg-3 .listing-card {
+      flex-basis: calc(100% - 2rem);
+    }
+  }
     </style>
 <div id="filters">
   <div class="filter">
@@ -64,7 +95,7 @@
     <p>Boat</p>
   </div>
 </div>
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+    <div class="row row-cols-lg-3">
       <% for(let listing of allListings) { %>
         <a href="/listings/<%= listing._id %>" class="listing-link">
         <div class="card col listing-card" >
