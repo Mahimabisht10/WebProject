@@ -93,12 +93,7 @@ body {
 }
 
 /* new page*/
-.add-btn {
-    background-color: #fe424d !important;
-    border: none !important;
-}
-
-/* edit page*/
+.add-btn,
 .edit-btn {
     background-color: #fe424d !important;
     border: none !important;
@@ -124,4 +119,53 @@ body {
     width: 90%;
     max-width: 90vh;
     margin: 0 auto;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 4rem;
+    }
+
+    .fa-compass {
+        font-size: 1.5rem;
+    }
+
+    .f-info {
+        height: auto;
+    }
+
+    .listing-card {
+        margin-bottom: 1rem;
+    }
+
+    .card-img-overlay:hover {
+        opacity: 0.4;
+        background-color: white;
+    }
+
+    .show-card {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        height: 3.5rem;
+    }
+
+    .fa-compass {
+        font-size: 1.2rem;
+    }
+
+    .f-info {
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .card-img-overlay:hover {
+        opacity: 0.5;
+        background-color: white;
+    }
 }
