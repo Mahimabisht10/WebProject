@@ -8,13 +8,13 @@
   <div class="col-lg-8 offset-lg-2">
     <h3 class="text-center"><%= listing.title %></h3>
   </div>
-  <div class="card col-lg-8 offset-lg-2 show-card listing-card">
+  <div class="card col-6 offset-3 show-card listing-card">
     <img
       src="<%= listing.image.url %>"
       class="card-img-top show-img"
       alt="listing_image"
     />
-    <div class="card-body">
+    <div class="card-body text-center">
       <p class="card-text">Owned By <i> <%= listing.owner.username %> </i> </p>
        <p> <%= listing.description %> </p>
         <p>&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
@@ -40,7 +40,7 @@
   </div>
   <%}%>
 
-  <div class="col-lg-8 offset-lg-2 mb-3">
+  <div class="col-8 offset-3 mb-3">
     <hr />
     <% if(currUser) {%>
     <h4 class="text-center">Leave a Review</h4>
@@ -84,16 +84,16 @@
         <% } %>
 
      <%if(listing.reviews.length > 0){%>
-     <div class="col-lg-8 offset-lg-2">
+     <div class="row">
       <p class="text-center"><b>All Reviews</b></p>
       <% for(review of listing.reviews){%>
-        <div class="col-12 mb-3 text-center ">
-          <div class="card text-center">
-        <div class="card-body text-center">
+        <div class="col-12 mb-3">
+          <div class="card">
+        <div class="card-body">
           
-          <h5 class="card-title ">@<%= review.author.username %></h5>
-          <p class="starability-result card-text text-center " data-rating="<%= review.rating %>"></p>
-          <p class="card-text "><%= review.comment %></p>
+          <h5 class="card-title text-center">@<%= review.author.username %></h5>
+          <p class="starability-result card-text mx-auto" data-rating="<%= review.rating %>"></p>
+          <p class="card-text text-center"><%= review.comment %></p>
           <form 
           class="mb-3" 
         method="post" 
@@ -108,7 +108,7 @@
      <% } %>
 </div>
 <div class="col-lg-8 offset-lg-2 mb-3">
-  <h5 class="text-center mt-2">Where you'll be</h5>
+  <h5 class="text-center">Where you'll be</h5>
   <div id="map" style="height: 300px;"></div>
 </div>
 </div>
