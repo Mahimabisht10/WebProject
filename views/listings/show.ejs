@@ -14,7 +14,7 @@
       class="card-img-top show-img"
       alt="listing_image"
     />
-    <div class="card-body text-center">
+    <div class="card-body ">
       <p class="card-text">Owned By <i> <%= listing.owner.username %> </i> </p>
        <p> <%= listing.description %> </p>
         <p>&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
@@ -30,7 +30,7 @@
   <div class="btns">
     <a
       href="/listings/<%= listing._id %>/edit"
-      class="btn btn-dark  offset-5 edit-btn"
+      class="btn btn-dark  offset-6 edit-btn"
       >Edit
     </a>
 
