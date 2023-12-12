@@ -122,6 +122,13 @@ body {
 }
 
 /* Responsive Styling */
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: azure;
+        backdrop-filter: blur(10px);
+    }
+    
+}
 
 @media (max-width: 768px) {
    /* .navbar {
