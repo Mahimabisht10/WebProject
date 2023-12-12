@@ -15,11 +15,14 @@
         
         <li class="nav-item">
           <a class="nav-link" href="/listings/new">Add new Home</a>
-
+             </li>
+             <li class="nav-item">
           <%if(!currUser){%>
           <a class="nav-link " href="/signup"><b>Signup</b></a>
           <a class="nav-link" href="/login"><b>LogIn</b></a>
           <% } %>
+             </li>
+             <li class="nav-item">
          <% if(currUser) { %>
           <a class="nav-link" href="/logout"><b>Logout</b></a>
           <% } %>

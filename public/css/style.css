@@ -124,13 +124,13 @@ body {
 /* Responsive Styling */
 
 @media (max-width: 768px) {
-    .navbar {
+   /* .navbar {
         height: 4rem;
     }
 
     .fa-compass {
         font-size: 1.5rem;
-    }
+    }*/
 
     .f-info {
         height: auto;
@@ -151,14 +151,14 @@ body {
 }
 
 @media (max-width: 576px) {
-    .navbar {
+    /*.navbar {
         height: 3.5rem;
     }
 
     .fa-compass {
         font-size: 1.2rem;
     }
-
+*/
     .f-info {
         height: auto;
         margin-top: 1rem;
