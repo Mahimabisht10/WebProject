@@ -40,7 +40,7 @@
   </div>
   <%}%>
 
-  <div class="col-8 offset-3 mb-3">
+  <div class="col-lg-8 offset-lg-2 mb-3">
     <hr />
     <% if(currUser) {%>
     <h4 class="text-center">Leave a Review</h4>
@@ -87,13 +87,13 @@
      <div class="row">
       <p class="text-center"><b>All Reviews</b></p>
       <% for(review of listing.reviews){%>
-        <div class="col-12 mb-3">
-          <div class="card">
-        <div class="card-body">
+        <div class="col-lg-8 offset-lg-2 mb-3 text-center">
+          <div class="card text-center">
+        <div class="card-body text-center">
           
-          <h5 class="card-title text-center">@<%= review.author.username %></h5>
+          <h5 class="card-title ">@<%= review.author.username %></h5>
           <p class="starability-result card-text mx-auto" data-rating="<%= review.rating %>"></p>
-          <p class="card-text text-center"><%= review.comment %></p>
+          <p class="card-text"><%= review.comment %></p>
           <form 
           class="mb-3" 
         method="post" 
