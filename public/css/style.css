@@ -179,12 +179,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin: auto;
-} 
+}
 
 .filter {
-  
   margin-right: 3rem;
   margin-top: 1.5rem;
   text-align: center;
@@ -228,4 +227,3 @@ body {
     flex-basis: calc(100% - 2rem);
   }
 }
-
