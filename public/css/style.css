@@ -182,6 +182,9 @@ body {
 
 }
 .filter {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   margin-right: 3rem;
   margin-top: 1.5rem;
   text-align: center;
@@ -192,7 +195,7 @@ body {
   cursor: pointer;
 }
 .filter p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .row-cols-lg-3 {
   display: flex;
