@@ -178,9 +178,10 @@ body {
 #filters {
   display: flex;
   flex-wrap: wrap;
+
 }
 .filter {
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-top: 1.5rem;
   text-align: center;
   opacity: 0.7;
@@ -190,7 +191,7 @@ body {
   cursor: pointer;
 }
 .filter p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .row-cols-lg-3 {
   display: flex;
@@ -223,17 +224,4 @@ body {
     flex-basis: calc(100% - 2rem);
   }
 }
-/*.btn-search {
-    background-color: #fe424d;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 0 1rem 0 1rem;
-  }
-  .btn-search:hover {
-    background-color: #fe424d;
-    color: #ffffff;
-  }
-  .btn-search i {
-    display: inline;
-    margin-right: 0.4rem;
-  }*/
+
